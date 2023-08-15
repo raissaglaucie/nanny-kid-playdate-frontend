@@ -1,0 +1,49 @@
+.Account {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    max-width:80%;
+    margin: auto;
+}
+
+.profForm {
+    width: 50%;
+    margin: 50px;
+    padding: 100px;
+    border-radius: 10px;
+}
+
+.transButton{
+    cursor: default;
+}
+
+#submitButton{
+    color: transparent;
+    text-align: center;
+}
+
+
+
+.AccountTitle {
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: #00BCD4;
+}
+
+.profLabel {
+    color: rgb(0, 0, 0);
+}
+
+.form-ctrl{
+    width: 70%;
+    float: right;
+    border-radius: 750px;
+    padding-left: 3%;
+    border: 1px solid rgb(191, 189, 189);
+}
+
+.editProf{
+    padding-top: 3%;
+}
