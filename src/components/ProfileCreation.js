@@ -226,7 +226,7 @@ const ProfileCreation = () => {
 									</Center>
 								</Box>
 
-								<Center mt='3%'>
+								<Center pl={'28%'} pt={'3%'} maxWidth={'72%'}>
 									<Button
 										className='transButton'
 										name='avatar'
@@ -245,7 +245,7 @@ const ProfileCreation = () => {
 							</Box>
 						</Center>
 
-						<Box w='70%'>
+						<Box w='60%'>
 							<h4 className='profileTitle'>Create Your Public Profile</h4>
 
 							<FormLabel htmlFor='name' className='profLabel'>
