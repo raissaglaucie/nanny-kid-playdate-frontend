@@ -226,7 +226,7 @@ const ProfileCreation = () => {
 									</Center>
 								</Box>
 
-								<Center mt='3%'>
+								<Center pl={'28%'} pt={'3%'} maxWidth={'72%'}>
 									<Button
 										className='transButton'
 										name='avatar'
@@ -235,18 +235,16 @@ const ProfileCreation = () => {
 									>
 										<input
 											type='file'
-											name='thumbnail'
+											name='avatar'
 											id='submitButton'
-											accept='image/*'
 											onChange={handleChange}
-											style={{ display: 'none' }}
 										/>
 									</Button>
 								</Center>
 							</Box>
 						</Center>
 
-						<Box w='65%'>
+						<Box w='70%'>
 							<h4 className='profileTitle'>Create Your Public Profile</h4>
 
 							<FormLabel htmlFor='name' className='profLabel'>
