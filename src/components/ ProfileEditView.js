@@ -29,12 +29,14 @@ import {
 	ModalBody,
 } from '@chakra-ui/react';
 import { FaHeart, FaUserFriends, FaPlusCircle } from 'react-icons/fa';
+import * as colors from '../utils/colors';
 import axios from 'axios';
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import MainNavBar from './MainNavBar';
 import Kids from './Kids';
 import Comments from './Comments';
+// import Carousel from '../../components/Carousel';
 import PlacesSmall from './PlacesSmall';
 import { useNavigate } from 'react-router-dom';
 
@@ -56,7 +58,7 @@ function ProfileEditView() {
 	const [profilePhoneNum, setProfilePhoneNum] = useState('');
 	const [curProfileLogo, setCurNewProfileLogo] = useState(null);
 	const [newProfileLogo, setNewProfileLogo] = useState(null);
-	const logoChooser = useRef(null);
+	const logoChooser = useRef(null); //VERIFICAR ISSO AQUI
 
 	const config = {
 		headers: {
@@ -212,11 +214,13 @@ function ProfileEditView() {
 									marginBottom='35px'
 								>
 									Nanny's Information
+									{/* TODO: Add no profiles if there is none in the db */}
 								</Heading>
 								<Box
 									style={{
 										marginTop: '2rem',
 									}}
+									//   boxSize="sm"
 									background='white'
 									borderRadius='0.2rem'
 									height='200px'
@@ -261,6 +265,16 @@ function ProfileEditView() {
 										)}
 									</Stack>
 								</Box>
+								{/* <Center>
+									<Heading
+										marginTop='0.5rem'
+										as='h3'
+										fontSize='23px'
+										style={{ color: '#FFA000' }}
+									>
+										{profile.name}
+									</Heading>
+								</Center> */}
 
 								<Button
 									style={{ marginTop: '150px' }}
@@ -316,6 +330,7 @@ function ProfileEditView() {
 										</Tab>
 									</TabList>
 									<TabPanels>
+										{/* General */}
 										<TabPanel>
 											<Stack>
 												<Box>
@@ -394,6 +409,13 @@ function ProfileEditView() {
 														>
 															Kids
 														</Heading>
+														{/* <IconButton
+															style={{ marginTop: '.5rem' }}
+															height='3vh'
+															color='#0097A7'
+															icon={<FaPlusCircle />}
+															onClick={onOpen}
+														/> */}
 														<Button
 															rightIcon={<FaPlusCircle />}
 															onClick={onOpen}
@@ -410,7 +432,7 @@ function ProfileEditView() {
 												<ModalOverlay />
 												<ModalContent>
 													<ModalHeader>Add new kid </ModalHeader>
-
+													{/* <ModalCloseButton /> */}
 													<ModalBody>
 														<Heading
 															marginTop='0.5rem'
@@ -521,7 +543,7 @@ function ProfileEditView() {
 						thickness='4px'
 						speed='0.65s'
 						emptyColor='gray.200'
-						color='blue.500'
+						color={'orange'}
 						size='xl'
 					/>
 				</Box>

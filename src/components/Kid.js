@@ -168,9 +168,7 @@ function Kid({ kidImg, name, description, age, id, isOwner, prof_id, setKid }) {
 										setKidPicture(event.target.files[0]);
 									}}
 									type='file'
-									// class='form-control'
-									// id='customFile'
-									accept='image/*' //PRECISAMOS OLHAR ISSO DEPOIS
+									accept='image/*'
 								></input>
 							</Stack>
 						</ModalBody>
@@ -222,8 +220,6 @@ function Kid({ kidImg, name, description, age, id, isOwner, prof_id, setKid }) {
 				maxW='450px'
 				minWidth='450px'
 				maxHeight='250px'
-				// minHeight="260px"
-				// borderWidth="1px"
 				borderRadius='lg'
 				overflow='hidden'
 				_hover={{ transform: 'scale(1.01)' }}
@@ -247,30 +243,14 @@ function Kid({ kidImg, name, description, age, id, isOwner, prof_id, setKid }) {
 						src={kidImg}
 						ml='3'
 						mb='3'
-						objectFit='cover' // Add this line
+						objectFit='cover'
 					/>
 
 					<Box ml='3'>
-						{/* <Badge
-							mt='4'
-							bg={colors.blue.medium}
-							color='white'
-							borderRadius='5px'
-						>
-							Kid Name
-						</Badge> */}
-						<Text
-							fontSize='xl'
-							isTruncated
-							fontWeight='bold'
-							color='white'
-							// fontSize='sm'
-						>
+						<Text fontSize='xl' isTruncated fontWeight='bold' color='white'>
 							{name}
 						</Text>
-						{/* <Badge bg={colors.blue.medium} color='white' borderRadius='5px'>
-							Description
-						</Badge> */}
+
 						<Text maxW='240px' color='white' fontSize='sm'>
 							{description}
 						</Text>
