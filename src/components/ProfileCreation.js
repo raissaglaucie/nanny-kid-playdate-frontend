@@ -226,7 +226,7 @@ const ProfileCreation = () => {
 									</Center>
 								</Box>
 
-								<Center pl={'28%'} pt={'3%'} maxWidth={'72%'}>
+								<Center mt='3%'>
 									<Button
 										className='transButton'
 										name='avatar'
@@ -236,6 +236,7 @@ const ProfileCreation = () => {
 										<input
 											type='file'
 											name='avatar'
+											accept='image/*'
 											id='submitButton'
 											onChange={handleChange}
 										/>
