@@ -7,11 +7,11 @@
 
 The Nanny Kid Playdate is a web application that facilitates connecting and arranging playdates for nannies. The application allows users to create profiles, search for other users, follow and unfollow other nannies, post pictures with descriptions about the visited place, and comment on other users' profiles. Users can manage their profiles by providing essential information about themselves and their nanny kids. The project focuses on creating a user-friendly and personalized platform to enhance the playdate experience for nannies and promote social interaction among children.
 
-# Installation-Usage
+# Setting Up and Configuration
 
 This project's user interface is constructed using React, a JavaScript library designed to streamline the development of efficient and reusable front-end components. Complemented by Chakra UI, the project leverages features and a virtual Document Object Model (DOM) to optimize the updating and rendering of user interface elements. This optimization leads to an enhanced and seamless user interaction.
 
-Follow these steps to set up both the backend and frontend repositories for the project in a dedicated folder named "nanny-kid-playdate":
+Follow these steps to set up the frontend repositories for the project in a dedicated folder named "nanny-kid-playdate":
 
 1 - Create a new directory to accommodate the backend and frontend repositories: make a directory named "nanny-kid-playdate."
 
@@ -39,22 +39,22 @@ Backend: The backend, built using Django, handles the business logic and interac
 
 Database: PostgreSQL, our chosen database system, stores all the necessary data for the application. It's accessed by the backend for data manipulation.
 
-API Communication: The front end and back end communicate via RESTful APIs. This allows them to exchange data and requests seamlessly.
+API Communication: The frontend and backend communicate via RESTful APIs. This allows them to exchange data and requests seamlessly.
 
 User Authentication: I am using Token-based Authentication to manage user authentication and ensure secure access to the application.
 
 
 # Interaction Flow
 
-1 - A user interacts with the web application through the front-end user interface.
+1 - A user interacts with the web application through the frontend user interface.
 
-2 - The front end requests the backend API to fetch or manipulate data.
+2 - The frontend requests the backend API to fetch or manipulate data.
 
-3 - The backend processes these requests, interacts with the database if needed, and sends back the appropriate response to the front end.
+3 - The backend processes these requests, interacts with the database if needed, and sends back the appropriate response to the frontend.
 
 4 - User authentication and authorization are managed by Token-based Authentication, ensuring secure access to the application's features.
 
-5 - Data retrieved from the database is presented to the user through the front end's UI.
+5 - Data retrieved from the database is presented to the user through the frontend's UI.
 
 # Accessing the Deployed Version
 
