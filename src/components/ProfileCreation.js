@@ -207,7 +207,7 @@ const ProfileCreation = () => {
 												size='2xl'
 												bg='#FFA000'
 												src={userProfile.avatar}
-											/>{' '}
+											/>
 										</Box>
 									</Center>
 									<Center>
@@ -217,16 +217,9 @@ const ProfileCreation = () => {
 											</Text>
 										</Box>
 									</Center>
-									<Center>
-										<Box>
-											<Text as='kbd' color={'gray'}>
-												{formValue.address}
-											</Text>
-										</Box>
-									</Center>
 								</Box>
 
-								<Center pl={'28%'} pt={'3%'} maxWidth={'72%'}>
+								<Center mt='3%'>
 									<Button
 										className='transButton'
 										name='avatar'
@@ -235,16 +228,19 @@ const ProfileCreation = () => {
 									>
 										<input
 											type='file'
-											name='avatar'
+											name='thumbnail'
 											id='submitButton'
+											accept='image/*'
 											onChange={handleChange}
+											style={{ display: 'none' }}
 										/>
+										Choose your file
 									</Button>
 								</Center>
 							</Box>
 						</Center>
 
-						<Box w='70%'>
+						<Box w='65%'>
 							<h4 className='profileTitle'>Create Your Public Profile</h4>
 
 							<FormLabel htmlFor='name' className='profLabel'>
