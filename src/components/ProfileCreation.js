@@ -207,13 +207,20 @@ const ProfileCreation = () => {
 												size='2xl'
 												bg='#FFA000'
 												src={userProfile.avatar}
-											/>
+											/>{' '}
 										</Box>
 									</Center>
 									<Center>
 										<Box>
 											<Text as='abbr' fontSize='2xl' color={'black'}>
 												{formValue.name}
+											</Text>
+										</Box>
+									</Center>
+									<Center>
+										<Box>
+											<Text as='kbd' color={'gray'}>
+												{formValue.address}
 											</Text>
 										</Box>
 									</Center>
@@ -234,7 +241,6 @@ const ProfileCreation = () => {
 											onChange={handleChange}
 											style={{ display: 'none' }}
 										/>
-										Choose your file
 									</Button>
 								</Center>
 							</Box>
