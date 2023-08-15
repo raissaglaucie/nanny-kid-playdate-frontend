@@ -88,7 +88,7 @@ function NavBar() {
 									style={{ color: 'white', width: '20px', height: '20px' }}
 								/>
 							}
-							variantColor='teal'
+							variantcolor='teal'
 							variant='link'
 							onClick={() => navigate('/profiles')}
 						>
@@ -101,7 +101,7 @@ function NavBar() {
 									style={{ color: 'white', width: '20px', height: '20px' }}
 								/>
 							}
-							variantColor='teal'
+							variantcolor='teal'
 							variant='link'
 							onClick={() => navigate('/places')}
 						>
@@ -114,7 +114,7 @@ function NavBar() {
 									style={{ color: 'white', width: '20px', height: '20px' }}
 								/>
 							}
-							variantColor='teal'
+							variantcolor='teal'
 							variant='link'
 							onClick={() => {
 								if (!isOwner) {
